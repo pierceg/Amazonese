@@ -1,0 +1,12 @@
+{
+"name":"Amazonese",
+"description":"Translates vague AWS service names.",
+"version":"1",
+"manifest_version":2,
+"content_scripts": [
+    {
+      "matches": ["https://console.aws.amazon.com/console/home?region=*"],
+      "js": ["amazonese.js"]
+    }
+  ]
+}
